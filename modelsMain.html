@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLC Models</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Accordion</h2>
+
+    <button class="accordion">Waterfall</button>
+    <div class="panel">
+    <p>
+        The first known presentation describing use of such phases in software engineering was held by Herbert D. 
+        Benington at the Symposium on Advanced Programming Methods for Digital Computers on 29 June 1956.
+    </p>
+
+    <p>
+
+    </p>
+
+    <p>
+
+        Time spent early in the software production cycle can reduce costs at later stages by
+         finding problem in the early stages is cheaper to fix than the same bug found later on in the process
+    </p>
+    <img src="images/SDLC-Waterfall-Model.webp" alt="SDLC Waterfall Model">
+    </div>
+
+    <button class="accordion">Iterative</button>
+    <div class="panel">
+    <p>
+        The basic idea behind this method is to develop a system through repeated cycles and in smaller portions at a time, 
+        allowing software developers to take advantage of what was learned during development of earlier parts or versions of the system. 
+        Learning comes from both the development and use of the system, 
+        where possible key steps in the process start with a simple implementation of a subset of the software requirements and iteratively 
+        enhance the evolving versions until the full system is implemented. 
+        At each iteration, design modifications are made and new functional capabilities are added.
+    </p>
+    </div>
+
+    <button class="accordion">Prototyping</button>
+    <div class="panel">
+    <p>
+        In this Prototype Model before designing phase, a prototype is developed, tested, reviewed and approved by the customer, 
+        after that design will be ready for coding, testing, installation and maintenance will takes place. 
+        This prototype is prepared based on the customer requirements.
+    </p>
+    </div>
+
+    <button class="accordion">Spiral</button>
+    <div class="panel">
+    <p>
+        The spiral model method is used for risk management that combines the iterative development process model with elements of the Waterfall model. 
+        The spiral model is used by software engineers and is favored for large, expensive and complicated projects.
+    </p>
+    </div>
+
+    <button class="accordion">V-Model</button>
+    <div class="panel">
+    <p>
+        The V-model is a type of SDLC model where process executes in a sequential manner in V-shape. 
+        It is also known as Verification and Validation model. 
+        It is based on the association of a testing phase for each corresponding development stage. 
+        Development of each step directly associated with the testing phase.
+    </p>
+
+    <img src="images/The-Design-of-the-SDLC-V-Model.webp" alt="SDLC V-model design">
+    </div>
+
+    <button class="accordion">Agile</button>
+    <div class="panel">
+    <p>
+        The Agile software development model was mainly intended for helping developers build a project which can adapt to 
+        transforming requests quickly. 
+        So, the most important endeavor for developing the Agile model is to make easy and rapid project achievement. 
+        For attaining this task, developers need to correcting the progression to the project by eliminating activities which may not be crucial 
+        for that specific project.
+    </p>
+
+    <p>
+        Agile SDLC breaks down the product into small incremental builds which, 
+        the customer is able to see the result and understand whether the software product satisfied with it or not.
+        Which is one of the advantages, to implement or fix during development.
+    </p>
+
+    <img src="images/Agile-Software-Development-Model.webp" alt="SDLC Agile model">
+    </div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+    </script>
+
+    <!--
+        git bash
+        master/main branch
+
+        git init
+        git status // tracks files
+        git add .//
+        git statud // shows changed files
+        git commit -m "Add Model Page"
+        // register to github
+        //in github create new repository
+        //name it SDLC-main
+        //copy link and paste into bash !should be https
+        git push -u origin (here goes master or main)
+    -->
+</body>
+</html>
