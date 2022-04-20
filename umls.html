@@ -60,64 +60,96 @@
     </div>
 
 
-    <button class="accordion">Iterative</button>
+    <button class="accordion">Class diagrams</button>
     <div class="panel">
         <p>
-            The basic idea behind this method is to develop a system through repeated cycles and in smaller portions at a time, 
-            allowing software developers to take advantage of what was learned during development of earlier parts or versions of the system. 
-            Learning comes from both the development and use of the system, 
-            where possible key steps in the process start with a simple implementation of a subset of the software requirements and iteratively 
-            enhance the evolving versions until the full system is implemented. 
-            At each iteration, design modifications are made and new functional capabilities are added.
+            The Unified Modeling Language or UML notation is probably the most well known and 
+            regularly used visual representation of programs that you'll find in software development. 
+            There are a wide range of diagrams to help you specify your data and processes before you start programming. 
+            They help you clarify requirements and limitations, speed up the implementation, 
+            provide a guide for thorough testing, 
+            and prevent bugs from sneaking in throughout the entire software development process.
         </p>
+
+        <img src="images/Class-Diagram-Habit-Tracker-app.png" alt="Class Diagram">
     </div>
 
-    <button class="accordion">Prototyping</button>
+
+    <button class="accordion">Sequence diagrams</button>
     <div class="panel">
         <p>
-            In this Prototype Model before designing phase, a prototype is developed, tested, reviewed and approved by the customer, 
-            after that design will be ready for coding, testing, installation and maintenance will takes place. 
-            This prototype is prepared based on the customer requirements.
+            UML sequence diagrams are the first highly detailed behavioural diagrams that you will create 
+            when using UML for software development. 
+            They aren't so often used in business process modelling, 
+            especially because they refer to the actual data and operation names 
+            that will be used when programming. 
+            That doesn't mean you can't use sequence diagrams: 
+            they can be used to model business objects and their interactions in detail, 
+            or by IT staff to detail how the elements in their infrastructure communicate and work together.            
         </p>
+
+        <img src="images/drawio-sequence-diagram-habit-tracker.png" alt="Sequence Diagram">
     </div>
 
-    <button class="accordion">Spiral</button>
+
+    <button class="accordion">State diagrams</button>
     <div class="panel">
         <p>
-            The spiral model method is used for risk management that combines the iterative development process model with elements of the Waterfall model. 
-            The spiral model is used by software engineers and is favored for large, expensive and complicated projects.
+            State diagrams have been used in programming to describe 
+            the various possible states that a system can be in for decades. 
+            They also quickly show which states lead to each other, 
+            and what triggers a change of state.
         </p>
+
+        <p>
+            Of course, you can use these diagrams for anything system or process 
+            that has various states - library books, a publishing process, 
+            even punishment and reward states for your kids. 
+            They are very similar to flow diagrams, but UML has a notation specifically for 
+            state diagrams, which they also call state machines or statecharts.
+        </p>
+
+        <img src="images/UML-state-diagram-Habit-Tracker-example.png" alt="State Diagram">
     </div>
 
-    <button class="accordion">V-Model</button>
+    <button class="accordion">Interaction overview diagrams</button>
     <div class="panel">
         <p>
-            The V-model is a type of SDLC model where process executes in a sequential manner in V-shape. 
-            It is also known as Verification and Validation model. 
-            It is based on the association of a testing phase for each corresponding development stage. 
-            Development of each step directly associated with the testing phase.
+            These UML diagrams are a combination of an activity diagram and sequence diagrams. 
+            Each individual activity or interaction is placed in its own frame, 
+            making it easier to see the different paths that need to be programmed 
+            when there are complex if-then-else decisions. 
+            Decisions are outside of the frames to show the flow of control between the various interactions.
         </p>
 
-        <img src="images/The-Design-of-the-SDLC-V-Model.webp" alt="SDLC V-model design">
+        <p>
+            The interactions themselves, inside the frames, are very similar to sequence diagrams. 
+            Between the interactions you will have decisions (diamonds) and fork 
+            and join nodes (solid horizontal rectangles), and connectors to show the flow of control. 
+            There are also initial and final nodes to show the start and end of the overarching interaction.
+        </p>
+
+        <img src="images/Interaction-Overview-Habit-Tracker.png" alt="Interaction Overview Diagram">
     </div>
 
-    <button class="accordion">Agile</button>
+    
+    <button class="accordion">Communication diagrams</button>
     <div class="panel">
         <p>
-            The Agile software development model was mainly intended for helping developers build a project which can adapt to 
-            transforming requests quickly. 
-            So, the most important endeavor for developing the Agile model is to make easy and rapid project achievement. 
-            For attaining this task, developers need to correcting the progression to the project by eliminating activities which may not be crucial 
-            for that specific project.
+            Communication diagrams are another way to visualize the information 
+            more commonly represented by UML sequence diagrams. 
+            They are simpler than sequence diagrams and only show the messages 
+            that pass between the objects or roles in a software program, 
+            infrastructure, or any kind of process.
         </p>
 
         <p>
-            Agile SDLC breaks down the product into small incremental builds which, 
-            the customer is able to see the result and understand whether the software product satisfied with it or not.
-            Which is one of the advantages, to implement or fix during development.
+            If you have multiple scenarios in one use case, 
+            UML communication diagrams help you clearly identify 
+            what messages (data) need to be sent between objects/roles in each specific scenario.
         </p>
 
-        <img src="images/Agile-Software-Development-Model.webp" alt="SDLC Agile model">
+        <img src="images/UML-communication-habitCheckin.png" alt="Communication Diagram">
     </div>
 
 
@@ -130,7 +162,10 @@
         <img src="" alt="">
     </div>
 
-    
+    <footer style="text-align: center; margin-top: 5rem;">
+        Copyright 2022 &#169 D.D.
+    </footer>
+
     <script src="script/accordion.js"></script>
 </body>
 </html>
