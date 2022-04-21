@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmeerimis Stiilid</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="accordion"><b>Behavior-Driven Development</b></button>
+    <div class="panel">
+        <p>
+            BDD ehk käitumisel põhinev arendus on testimisel põhineva arenduse laiendus. 
+            Selleks kasutatakse lihtsat valdkonnaspetsiifilist keelt, 
+            mis omakorda genereerib tavalised laused testideks.
+        </p>
+
+        
+        
+        <ul>
+            BDD kesksed küsimused on järgnevad:
+            <li>Kust alustada testimist?</li>
+            <li>Mida testida ja mida mitte?</li>
+            <li>Kui palju testida ühe korraga?</li>
+            <li>Kuidas aru saada, miks test ebaõnnestub?</li>
+        </ul>
+
+        <p>
+            BDD kasutab põhimõtteks käitumise väljandamiseks pool formaalset vormingut, 
+            mis on võetud kasutusloost. 
+            BDD eeldab, et analüütikud ja arendajad teevad koostööd. 
+            Nende ülesanne on kirjutada käitumisel põhinevad laused vastavasse dokumenti. <br>
+            Struktuur näeb selliseks:
+        </p>
+
+        <ul>
+            Sündmustik - lühike, sissejuhatav osa:
+            <li>Kes on loo põhitegelane (klient, kasutaja, administrator jne)</li>
+            <li>Mida ta tahab teha?</li>
+            <li>Miks ta seda teha tahab?</li>
+        </ul>
+
+        <ul>
+            Stsenaarium - kirjeldus stsenaariumist:
+            <li>Vajaliku konditsiooni spetsifikatsioon stsenaariumi alguses.</li>
+            <li>Stsenaariumi algatav tegevus.</li>
+            <li>Oodatav tulemus.</li>
+        </ul>
+    </div>
+
+
+    <button class="accordion"><b>Design-Driven Development</b></button>
+    <div class="panel">
+        <p>
+            Design-Driven Development ehk disaini põhinev arendus 
+            kasutab ise disaini nagu arenduse protsessina, 
+            mille käigus üritatakse arendada ja aru saada, 
+            kuidas seda paremaks teha. <br> 
+            Selle ülesehitus näeb selliselt:
+        </p>
+
+        <ul>
+            <li>
+                <b>Probleem + Lahenduse mõistmine</b> - 
+                Üritatakse leida kliendi probleemi, 
+                et sellest tehakse prototüübi või “clickable prototype”.
+            </li>
+
+            <li>
+                <b>Lahenduse testimine + Õpimine/lahendus</b> -
+                Leiakse endale väikse kasutaja fookuse ja läbi mitme kiir kasutaja testimist 
+                üritatakse leida lahenduse, kuidas parandada või paremaks teha lahenduse, 
+                et see sobiks kasutajatele.
+            </li>
+
+            <li>
+                <b>Toode  disain enne arendamist</b> - 
+                Võtakse nii palju aega, 
+                et välja töötada lahenduse koos kasutajate tagasisidega 
+                ja kliendi (toode huvilistele) vajadused.
+            </li>
+        </ul>
+    </div>
+
+
+    <button class="accordion"><b>Domain-Driven Design</b></button>
+    <div class="panel">
+        <p>
+            Domeenipõhine arendus on reeglite kogum, 
+            mis võimaldavad leida sobiva arendamise lahenduse mingis konkreetses aines. 
+            See põhineb sellele, et isegi kui arendaja, 
+            kes pole kokku puutunud konkreetse ainega, 
+            mis nõuab toode, suudaks valida sobivaima lahendamise meetodi.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Secure By Design</b></button>
+    <div class="panel">
+        <p>
+            Kujunduslik turvaline on tarkvara disain, mis hõlmab, 
+            et arendamise alguses kasutatakse turvalisuse strateegijaid 
+            ning sisestada turvalisust arhitektuursel tasemel.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Test-Driven Development</b></button>
+    <div class="panel">
+        <p>
+            Testimisel põhinev arenduses testid kirjutatakse enne tarkvara ennast. 
+            Arendusprotsess koosneb lühikesest iteratsioonisedest, 
+            kus esmalt kirjutatakse ebaõnnestuv test ning seejärel minimaalne kood, 
+            et see test läbi läheks. 
+            Selline arendus taga olukorra, kus kogu kood on alati testitud. 
+            Sellisel viisil kirjutatud koodi on kergem refaktoreerida 
+            ning testid aitavad ka programmi eeldatavat käitumist dokumenteerida. 
+            Testimisel põhinevat arendus rakendatakse ka olemasoleva koodi täiustamisel ja silumisel.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Acceptance Test-Driven Development</b></button>
+    <div class="panel">
+        <p>
+            Aktsepteerimistest lähtuv arendus põhineb ärikliendi, 
+            arendaja ja testija vahelise suhtlemisel. 
+            See protsess hõlmab arendaja ja testerite omavahel arusaamist kliendi tahtest, 
+            mis tuleb implementeerima ja see annab kliendile väljendada enda aine lähtuvast.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Continuous Test-Driven Development</b></button>
+    <div class="panel">
+        <p>
+            Jätkuv/Pidev testimise lähtuv arendamine on automaatne testimine, 
+            mis jookseb pidevalt tagaplaanil. 
+            See peaks potentsiaalselt vähenema testimist aega, 
+            mis on kirjutatud manuaalselt.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Specification By Example</b></button>
+    <div class="panel">
+        <p>
+            Näidisega spetsifikatsioon on koostöine lähenemisviis tarkvaratoodete nõuete 
+            ja ettevõtlusele suunatud funktsionaalsete testide määratlemisel, 
+            mis põhineb nõuete tabamisel ja illustreerimisel, 
+            kasutades abstraktsete väidete asemel realistlikke näiteid.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Data-Driven Development/Programming</b></button>
+    <div class="panel">
+        <p>
+            Andmede põhinev programmeerimine on programmeerimise paradigma, 
+            mille puhul programmi laused kirjeldavad sobitatavaid andmeid 
+            ja vajalikku töötlemist, mitte ei määratle astutavate sammude jada.
+        </p>
+    </div>
+
+
+    <button class="accordion"><b>Data-Oriented Design</b></button>
+    <div class="panel">
+        <p>
+            andmetele orienteeritud disain on programmide optimeerimise lähenemisviis, 
+            mis on ajendatud CPU vahemälu tõhusast kasutamisest, 
+            mida kasutatakse videomängude arendamisel. 
+            Lähenemisviis on keskenduda andmete paigutusele, 
+            eraldada ja sorteerida väljad vastavalt vajadusele 
+            ning mõelda andmete teisendustele.
+        </p>
+    </div>
+
+
+    <script src="script/accordion.js"></script>
+</body>
+</html>
