@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="card bg-a">
+        <h1>What is Git?</h1>
+        <p>Git is a version control system which allows to manage 
+            code history. Whenever the code changes it can be saved by Git 
+            and jump back to previous changes anytime
+        </p>
+
+        <div class="card bg-b">
+            <h2>Repositories</h2>
+            <p>
+                A Repository is the location where the code is stored in a folder, 
+                where which Git will manage code version history.
+            </p>
+        </div>
+    
+        <div class="card bg-c">
+            <h2>Branches</h2>
+            <p>
+                A Branch is a "subfolder" inside of repository 
+                and contains different version of commits.
+            </p>
+        </div>
+    
+        <div class="card bg-d">
+            <h2>Commits</h2>
+            <p>
+                A Commit is a snapshot of a specific version of the code.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="card bg-e">
+        <h1>Git Main Commands</h1>
+
+        <div class="card bg-f">
+            <code>& git init</code>
+            <p>initializes a local git repository</p>
+        </div>
+        
+        <div class="card bg-a">
+            <code>& git status</code>
+            <p>provides information about the current state</p>
+        </div>
+
+        <div class="card bg-b">
+            <code>& git add .</code>
+            <p>tracks changes in all files inside the repository</p>
+        </div>
+
+        <div class="card bg-c">
+            <code>& git commit -m "MESSAGE"</code>
+            <p>saves current version of the code in branch</p>
+        </div>
+
+        <div class="card bg-d">
+            <code>& git branch</code>
+            <p>lists all branches in current repository</p>
+        </div>
+
+
+        <div class="card bg-f">
+            <code>& git log</code>
+            <p>displays all commits in current branch</p>
+        </div>
+        
+        <div class="card bg-a">
+            <code>& git checkout commitID</code>
+            <p>allows us to select a specific branch or commit</p>
+        </div>
+
+        <div class="card bg-b">
+            <code>& git master</code>
+            <p>enters to the latest commit ot the branch</p>
+        </div>
+
+        <div class="card bg-c">
+            <code>& git reset --hard commitID</code>
+            <p>deletes selected commit</p>
+        </div>
+
+        <div class="card bg-d">
+            <code>& git checkout -- .</code>
+            <p>jumps back to the last commit and remove any untracked changes</p>
+        </div>
+
+        <div class="card bg-f">
+            <code>& git checkout -b branchName</code>
+            <p>creates a new branch</p>
+        </div>
+        
+        <div class="card bg-a">
+            <code>& git checkout branchName</code>
+            <p>jumps to the selected commit of a branch</p>
+        </div>
+
+        <div class="card bg-b">
+            <code>& git merge branchName </code>
+            <p>merges two branches</p>
+        </div>
+
+        <div class="card bg-c">
+            <code>& git branch -D branchName</code>
+            <p>deletes selected branch</p>
+        </div>
+        
+    </div>
+
+
+    <div class="card bg-d">
+        <h1>What is GitHub</h1>
+
+        <p>
+            GitHub is a hosting and collaboration provider 
+            which hosts Git projects. 
+            It is a web based solution allowing to upload Git Repositories on it.
+        </p>
+
+    </div>
+
+
+    <div class="card bg-c">
+        <h1>GitHub Core Commands</h1>
+
+        <div class="card bg-d">
+            <code>& git remote add origin URL</code>
+            <p>
+                establishes a connection between the local git repository 
+                and the remote Repository
+            </p>
+        </div>
+
+        <div class="card bg-e">
+            <code>& git remote -v</code>
+            <p>
+                displays all remote respositories 
+                where current local repository is connected to
+            </p>
+        </div>
+
+        <div class="card bg-f">
+            <code>& git push -u origin master/main</code>
+            <p>
+                upload code from local branch to a remote branch in the remote repository
+            </p>
+        </div>
+
+        <div class="card bg-a">
+            <code>& git clone</code>
+            <p>
+                Copies an entire remote repository to local machine
+            </p>
+        </div>
+
+        <div class="card bg-b">
+            <code>& git push</code>
+            <p>
+                after creating remote branch, 
+                this simply uploads code to a remote repository
+            </p>
+        </div>
+
+        <div class="card bg-d">
+            <code>& git fetch</code>
+            <p>
+                updates the remote tracking branch 
+                with the code from the remote branch
+            </p>
+        </div>
+
+        <div class="card bg-e">
+            <code>& git remote rm origin</code>
+            <p>
+                removes the connection between the local repository 
+                and the remote repository
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font: 16px 'Robot';
+}
+
 span {
   font-weight: 700;
+}
+
+code {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.card{
+  max-width: 90%;
+
+  padding: 0px 8px 8px 8px;
+
+  margin: auto;
+  margin-top: 8px;
+  
+  border-radius: 8px;
+}
+
+.bg-a{
+  background: rgb(255, 200, 255);
+}
+
+.bg-b{
+  background: rgb(200, 200, 255);
+}
+
+.bg-c{
+  background: rgb(200, 255, 255);
+}
+
+.bg-d{
+  background: rgb(200, 255, 200);
+}
+
+.bg-e{
+  background: rgb(255, 255, 200);
+}
+
+.bg-f{
+  background: rgb(255, 200, 200);
 }
 
 .accordion {
