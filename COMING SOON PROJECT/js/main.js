@@ -49,6 +49,5 @@ const intvl = setInterval(() => {
         countdown.innerHTML = 'Launched!';
     }
 
-    console.log('message');
 
 }, 1000);
