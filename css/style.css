@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-  font: 16px 'Robot';
+  font: normal 16px 'Roboto', serif-sans;
 }
 
 span {
